@@ -1,0 +1,12 @@
+[
+  {
+    "name": "site1",
+    "url": "https://example1.com",
+    "cookies": "cookies1"
+  },
+  {
+    "name": "site2",
+    "url": "https://example2.com",
+    "cookies": "cookies2"
+  }
+]
