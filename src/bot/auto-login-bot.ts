@@ -15,6 +15,7 @@ export class AutoLoginBot {
     const sites = await loadSite()
     if (!sites.length) {
       this.log.error('CONFIG ERROR', `Please complete the config file at ${process.env.ACCOUNT_CONFIG_PATH}`)
+      process.exit(1)
     }
     this.sites = sites
   }

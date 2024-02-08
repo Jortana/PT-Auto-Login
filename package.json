@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc && tsc-alias",
     "start": "node --env-file=.env ./dist/src/index.js",
-    "dev": "tsc && (concurrently \"tsc -w\" \"tsc-alias -w\" \"nodemon --env-file=.env ./dist/src/index.js\")"
+    "dev": "tsnd -r tsconfig-paths/register --respawn ./src/index.ts"
   },
   "engines": {
     "node": ">=20.11.0"
@@ -17,11 +17,11 @@
   "devDependencies": {
     "@types/node": "^20.11.16",
     "@typescript-eslint/eslint-plugin": "^6.20.0",
-    "concurrently": "^8.2.2",
     "eslint": "^8.56.0",
     "eslint-import-resolver-alias": "^1.1.2",
-    "nodemon": "^3.0.3",
+    "ts-node-dev": "^2.0.0",
     "tsc-alias": "^1.8.8",
+    "tsconfig-paths": "^4.2.0",
     "typescript": "^5.3.3"
   }
 }
