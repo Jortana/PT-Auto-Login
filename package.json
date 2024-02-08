@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc && tsc-alias",
     "start": "node --env-file=.env ./dist/src/index.js",
-    "dev": "tsnd -r tsconfig-paths/register --respawn ./src/index.ts"
+    "dev": "tsnd --env-file=.env -r tsconfig-paths/register --respawn ./src/index.ts"
   },
   "engines": {
     "node": ">=20.11.0"
@@ -23,5 +23,8 @@
     "tsc-alias": "^1.8.8",
     "tsconfig-paths": "^4.2.0",
     "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2"
   }
 }

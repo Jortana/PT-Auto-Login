@@ -1,6 +1,7 @@
 import { log } from '~lib/logger'
 import { loadSite } from '~lib/load'
 import { Site } from '~interface/site'
+import chalk from 'chalk'
 
 export class AutoLoginBot {
   public log: typeof log
@@ -14,7 +15,7 @@ export class AutoLoginBot {
   async initialize() {
     const sites = await loadSite()
     if (!sites.length) {
-      this.log.error('CONFIG ERROR', `Please complete the config file at ${process.env.ACCOUNT_CONFIG_PATH}`)
+      this.log.error('CONFIG ERROR', `Please complete the config file at ${process.env.SITE_CONFIG_PATH}`)
       process.exit(1)
     }
     this.sites = sites
@@ -28,7 +29,7 @@ export class AutoLoginBot {
         }
       })
       if (res.status === 200) {
-        this.log('LOGIN SUCCESS', `The site ${site.name} has signed up successfully!`)
+        this.log.success('LOGIN SUCCESS', `The site ${chalk.underline(site.name)} has signed up successfully!`)
       }
     })
   }
