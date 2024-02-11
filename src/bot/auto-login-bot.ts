@@ -29,7 +29,7 @@ export class AutoLoginBot {
         }
       })
       if (res.status === 200) {
-        this.log.success('LOGIN SUCCESS', `The site ${chalk.underline(site.name)} has signed up successfully!`)
+        this.log.success('LOGIN SUCCESS', `${chalk.underline(site.name)} login success.`)
       }
     })
   }

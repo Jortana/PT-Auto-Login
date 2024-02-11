@@ -1,11 +1,10 @@
 {
   "name": "pt-login",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "build": "tsc && tsc-alias",
-    "start": "node --env-file=.env ./dist/src/index.js",
+    "start": "node ./dist/src/index.js",
     "dev": "tsnd --env-file=.env -r tsconfig-paths/register --respawn ./src/index.ts"
   },
   "engines": {
