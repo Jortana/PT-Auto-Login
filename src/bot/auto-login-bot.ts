@@ -22,6 +22,7 @@ export class AutoLoginBot {
   }
 
   autoLogin() {
+    this.log('START', 'Start login tasks')
     this.sites.forEach(async (site) => {
       const res = await fetch(site.url, {
         headers: {
