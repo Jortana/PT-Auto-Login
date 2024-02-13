@@ -13,11 +13,12 @@ PT Auto Login（简称PAL），是一个批量登录 PT 站点的自动化脚本
 #### 步骤 1：安装环境并下载或拉取仓库代码
 
 * 安装 node 环境，并且 node 版本 ≥ 17.5，推荐使用 20.11.0 以上版本（因为我的开发环境是 20.11.0），使用 `node -v` 确认版本
+* 推荐使用 `pnpm`，后续操作都基于 `pnpm` 进行，安装：`npm install -g pnpm`
 * 如：`git clone https://github.com/Jortana/PT-Auto-Login.git`
 
 #### 步骤 2：准备配置文件
 
-* 将位于 `./config/` 的 `site.example.json` 文件重命名为 `site.json`
+* 将位于 `./packages/pal-core/config/` 的 `site.example.json` 文件重命名为 `site.json`
 * 修改 `site.json` 的内容，`site.json` 是一个配置数组，其中每一个元素都是一个网站的配置。
   * name 字段是网站名称，用于展示
   * url 字段是需要登录的站点的 url，可以是网站首页、签到得魔力页面地址等
@@ -25,9 +26,9 @@ PT Auto Login（简称PAL），是一个批量登录 PT 站点的自动化脚本
 
 #### 步骤 3：编译并运行
 
-* `npm install` 或 `pnpm install`
-* `npm run build` 或 `pnpm build`
-* `npm start` 或 `pnpm start`
+* `pnpm install`
+* `pnpm build:core`
+* `pnpm start:core`
 
 ### 方式二：利用 Docker 容器定时运行（推荐）
 
