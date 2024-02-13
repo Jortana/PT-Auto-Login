@@ -1,0 +1,19 @@
+{
+  "name": "pal-core",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "build": "tsc && tsc-alias",
+    "start": "node ./dist/src/index.js",
+    "dev": "tsnd -r tsconfig-paths/register --respawn ./src/index.ts"
+  },
+  "engines": {
+    "node": ">=20.11.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2"
+  }
+}
