@@ -3,14 +3,13 @@
     {
       "name": "pal-core",
       "script": "./index.js",
-      "args": "['--toto=heya coco', '-d', '1']",
       "ignoreWatch": [
         "[\\/\\\\]\\./",
         "node_modules"
       ],
       "watch": true,
       "node_args": "--harmony",
-      "cwd": "./packages/pal-core/dist",
+      "cwd": "./packages/pal-core/dist/src",
       "log_file": "/var/log/pal-core/outerr.log",
       "out_file": "/var/log/pal-core/out.log",
       "error_file": "/var/log/pal-core/err.log"

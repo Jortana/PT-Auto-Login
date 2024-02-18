@@ -3,9 +3,9 @@ import schedule from 'node-schedule'
 
 const bot = new AutoLoginBot()
 bot.initialize().then(() => {
-  // schedule.scheduleJob('0 0 0 * * ?', () => {
-  schedule.scheduleJob('* * * * * ?', () => {
-    console.log('hello')
-    // bot.autoLogin()
+  schedule.scheduleJob('0 0 0 * * ?', () => {
+    // schedule.scheduleJob('* * * * * ?', () => {
+    // console.log('hello')
+    bot.autoLogin()
   })
 })
