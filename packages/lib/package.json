@@ -1,0 +1,11 @@
+{
+  "name": "pal-lib",
+  "version": "0.0.1",
+  "description": "",
+  "engines": {
+    "node": ">=20.11.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
