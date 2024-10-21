@@ -15,7 +15,8 @@ export default {
       }
 
       const taskConfigs = siteConfigs.map((siteConfig) => {
-        const delayMillis = Math.floor(Math.random() * 300000)
+        // const delayMillis = Math.floor(Math.random() * 300000)
+        const delayMillis = Math.floor(Math.random() * 60000)
         return { ...siteConfig, delay: delayMillis }
       })
 
