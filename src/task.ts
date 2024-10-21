@@ -7,7 +7,7 @@ export async function runCookieTasks(
     return async () => {
       const { name, url, cookies, delay } = taskConfig
       console.log(`[LOGIN] Start login task for ${name} in ${delay / 1000}s.`)
-      // await sleep(delay)
+      await sleep(delay)
       const response = await fetch(url, {
         headers: {
           Cookie: cookies,
