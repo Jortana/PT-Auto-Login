@@ -114,4 +114,4 @@ id = "dc2d2a2880fe409183508e2cda96282e"
 # index_name = "my-index"
 
 [triggers]
-crons = [ "0 0 * * *" ]
+crons = [ "0 16 * * *" ]
