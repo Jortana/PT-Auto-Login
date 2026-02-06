@@ -2,4 +2,5 @@
 
 interface Env {
 	PAL: KVNamespace;
+	PAL_BROWSER: Fetcher;
 }
